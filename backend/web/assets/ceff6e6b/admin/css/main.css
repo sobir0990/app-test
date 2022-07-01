@@ -1,0 +1,32 @@
+.modal.fade .modal-dialog {
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+}
+.file-caption-main .input-group-append {
+    display: block;
+}
+.file-caption-main {
+    width: 40%;
+}
+.modal .modal-dialog {
+    width: 900px;
+}
+.fileManagerList  {
+    width: 100%;
+}
+.modal-dialog  {
+    z-index: 1200;
+}
+.modal-open .select2-container {
+    z-index: 999;
+}
+.breadcrumb {
+    margin-left: 255px;
+    margin-top: -20px;
+}
+.sortable {
+    border: none;
+}
+body.menu-pin .page-container .page-content-wrapper .content {
+    padding-bottom: 70px;
+}

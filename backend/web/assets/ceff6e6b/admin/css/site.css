@@ -1,0 +1,24 @@
+.dd3-content, .dd-handle {
+    height: 40px;
+}
+
+.dd3-content {
+    padding: 9px 10px 5px 40px;
+}
+
+.dd-item > button {
+    margin-top: 11px;
+}
+
+.dd3-handle:before {
+    top: 10px;
+}
+
+.dd-action-btns {
+    float: right;
+    margin-top: -5px;
+}
+
+.dd-action-btns .btn {
+    padding: 4px 15px
+}
