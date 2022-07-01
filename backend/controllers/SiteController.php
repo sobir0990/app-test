@@ -23,31 +23,31 @@ class SiteController extends Controller
     /**
      * {@inheritdoc}
      */
-//    public function behaviors()
-//    {
-//        return [
-//            'access' => [
-//                'class' => AccessControl::className(),
-//                'rules' => [
-//                    [
-//                        'actions' => ['login', 'error', 'email'],
-//                        'allow' => true,
-//                    ],
-//                    [
-//                        'actions' => ['logout', 'index'],
-//                        'allow' => true,
-//                        'roles' => ['@'],
-//                    ],
-//                ],
-//            ],
-//            'verbs' => [
-//                'class' => VerbFilter::className(),
-//                'actions' => [
-//                    'logout' => ['post'],
-//                ],
-//            ],
-//        ];
-//    }
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['login', 'error', 'email'],
+                        'allow' => true,
+                    ],
+                    [
+                        'actions' => ['logout', 'index'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+                    'logout' => ['post'],
+                ],
+            ],
+        ];
+    }
 
     /**
      * {@inheritdoc}
@@ -94,19 +94,6 @@ class SiteController extends Controller
             ]);
         }
     }
-
-    public function actionTest()
-    {
-        $to      = 'sobir_0990@mail.ru';
-        Yii::$app->mailer->compose()
-            ->setFrom($to)
-            ->setTo($to)
-            ->setSubject('Уведемление с сайта <yourDomain>') // тема письма
-            ->setTextBody('Текстовая версия письма (без HTML)')
-            ->setHtmlBody('<p>code : 1234</p>')
-            ->send();
-    }
-
 
     /**
      * @param $id
