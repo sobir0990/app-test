@@ -24,7 +24,7 @@ return [
                 'class' => 'Swift_SmtpTransport',
                 'host' => 'smtp.gmail.com',
                 'username' => 'sobirmailru095@gmail.com',
-                'password' => 'tqcfuqVRdr9cN29r1',
+                'password' => '',
                 'port' => '465',
                 'encryption' => 'ssl',
             ],

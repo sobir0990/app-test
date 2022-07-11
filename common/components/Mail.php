@@ -34,7 +34,7 @@ class Mail extends BaseObject
         $smtp_server = 'ssl://smtp.gmail.com'; // адрес SMTP-сервера
         $smtp_port = 465; // порт SMTP-сервера
         $smtp_user = 'sobirmailru095@gmail.com'; // Имя пользователя для авторизации на SMTP-сервере
-        $smtp_password = 'tqcfuqVRdr9cN29r1'; // Пароль для авторизации на SMTP-сервере
+        $smtp_password = ''; // Пароль для авторизации на SMTP-сервере
         $mail_from = $smtp_user; // Ящик, с которого отправляется письмо
 
         $sock = fsockopen($smtp_server,$smtp_port,$errno,$errstr,30);
